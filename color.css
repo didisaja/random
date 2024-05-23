@@ -1,0 +1,62 @@
+@charset "euc-jp";
+
+/*
+ * カラーリスト
+ * 
+ * #6AF		背景色
+ * #9CF		ボーダー色
+ * 
+ */
+
+
+
+
+/*
+ * ▼スタイル設定初期化
+ * 
+ **************************************************/
+
+/*ボディ
+--------------------------------------------------*/
+body {
+	background-color:#6AF;
+}
+
+
+
+
+/*
+ * ▼見出し
+ * 
+ * @comment		メインエリアとサイドエリアを個別設定
+ * 
+ **************************************************/
+.layout_main h2 .wrap,
+.layout_main h3 .wrap,
+.layout_main h4 .wrap,
+.layout_side h2 .wrap,
+.layout_side h3 .wrap,
+.layout_side h4 .wrap {
+	border-color:#9CF;
+}
+
+
+/*
+ * ▼装飾フレーム用クラス
+ * 
+ **************************************************/
+.layout_whole			{background-color:#FFF;}
+.layout_whole .whole1	{background:url(img/frame_t2.gif) repeat-x  left  top;}
+.layout_whole .whole2	{background:url(img/frame_b2.gif) repeat-x  left  bottom;}
+.layout_whole .whole3	{background:url(img/frame_m1.gif) repeat-y  left  top;}
+.layout_whole .whole4	{background:url(img/frame_m3.gif) repeat-y  right top;}
+.layout_whole .whole5	{background:url(img/frame_t1.gif) no-repeat left  top;}
+.layout_whole .whole6	{background:url(img/frame_t3.gif) no-repeat right top;}
+.layout_whole .whole7	{background:url(img/frame_b1.gif) no-repeat left  bottom;}
+.layout_whole .whole8	{background:url(img/frame_b3.gif) no-repeat right bottom; width:100%;}
+.layout_whole .whole9	{padding:50px;}
+
+
+
+
+

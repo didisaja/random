@@ -1,0 +1,11 @@
+@charset "euc-jp";
+
+/* WinIE3〜4, MacIE4 を@importにより除外
+=============================================*/
+@import url("reset.css");
+@import url("standard.css");
+@import url("menu.css");
+@import url("jsblock.css");
+
+/* 暫定追加 */
+@import url(blog-std.css);

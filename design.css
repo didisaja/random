@@ -1,0 +1,180 @@
+@charset "euc-jp";
+
+
+
+
+
+/*
+ * ▼スタイル設定初期化
+ * 
+ * @comment	・ブラウザごとの表示差異を吸収
+ * 			・タグのスタイル設定を初期化
+ * 
+ **************************************************/
+
+/*ボーダー初期化
+--------------------------------------------------*/
+div, p, pre, blockquote,
+ul, ol, li, dl, dt, dd,
+h1, h2, h3, h4, h5, h6,
+table, th, td {
+	border-width:0;
+	border-style:solid;
+}
+
+/*ボディ
+--------------------------------------------------*/
+body {
+	color:#444;
+	background-color:#FFF;
+}
+
+
+
+
+/*
+ * ▼マージン一括指定
+ * 
+ * @comment	・基本ブロック要素のマージン一括指定
+ * 			・詳細指定は各要素で行う
+ * 
+ **************************************************/
+
+
+
+
+/*
+ * ▼レイアウト
+ * 
+ * @comment	・div, td に設定
+ * 			・サイド列については2つのクラス名を指定
+ * 			　→class="area_side area_left" または class="area_side area_right"
+ * 
+ **************************************************/
+.layout_whole		{}
+.layout_top			{}
+.layout_middle		{padding:0;}
+.layout_bottom		{padding:0;}
+.layout_side		{}
+.layout_left		{}
+.layout_right		{}
+.layout_main		{}
+
+
+
+/*
+ * ▼ヘッダー
+ * 
+ * @comment		ロゴ＋ヘッダーメニュー
+ * 
+ **************************************************/
+.header			{}
+.header h1,
+.header h1 a	{color:#444;}
+
+
+
+
+
+/*
+ * ▼フッター
+ * 
+ * @comment	・コピーライト＋メニューなど
+ * 
+ **************************************************/
+.footer		{margin:1em 0 0 0;}
+
+
+
+
+
+/*
+ * ▼ナビゲーションメニュー
+ * 
+ * @comment		縦並び、横並びナビゲーションメニュー
+ * 
+ **************************************************/
+
+.menu.hnavi_top .yuimenubar									{padding:5px 0 0 0; background-color:#FFF; border-bottom-width:1px;}
+
+.menu.hnavi_top .yuimenubar h6								{}
+.menu.hnavi_top .yuimenu    h6								{}
+
+.menu.hnavi_top .yuimenubaritemlabel						{background-color:#FFF; border-bottom-color:#FFF; border-width:0 1px 3px 0;}
+.menu.hnavi_top .yuimenubar .yuimenu						{background-color:#EEE; border-width:1px;}
+
+.menu.hnavi_top a.yuimenuitemlabel,
+.menu.hnavi_top a.yuimenubaritemlabel						{text-decoration:none;}
+
+.menu.hnavi_top a.checked,
+.menu.hnavi_top a.selected									{background-color:#FFF; border-bottom-color:#F60; text-decoration:none;}
+
+
+
+
+/*
+ * ▼パンくずナビゲーション
+ * 
+ * @comment		ナビゲーション階層メニュー設定
+ * 
+ **************************************************/
+ul.breadcrumb 	{padding:0;}
+
+
+
+
+
+/*
+ * ▼見出し
+ * 
+ * @comment		メインエリアとサイドエリアを個別設定
+ * 
+ **************************************************/
+h2,
+h3,
+h4						{border-width:0; letter-spacing:0.1em;}
+
+.layout_main h2			{border-width:1px;}
+.layout_main h2 .wrap	{display:block; padding:6px 12px; margin:2px; border-left:solid 12px #999;}
+.layout_main h3			{}
+.layout_main h3 .wrap	{display:block; padding:4px 10px; border-left:solid 12px #999;}
+.layout_main h4			{}
+.layout_main h4	.wrap	{}
+
+.layout_side h2			{border-width:1px;}
+.layout_side h2 .wrap	{display:block; padding:4px  8px; margin:2px; border-left:solid 12px #999;}
+.layout_side h3			{}
+.layout_side h3	.wrap	{display:block; padding:2px  8px; border-left:solid 12px #999;}
+.layout_side h4			{}
+.layout_side h4	.wrap	{}
+
+
+
+/*
+ * ▼テキストブロック
+ * 
+ * @comment		pタグクラス設定
+ * 
+ **************************************************/
+/*デフォルト*/		p			{}
+/*リード*/			p.lead		{font-weight:bold;}
+/*本文*/			p.body		{}
+/*詳細*/			p.detail	{}
+/*注意書き*/		p.caution	{}
+
+
+
+
+
+/*
+ * ▼一行メッセージ
+ * 
+ * @comment		マーキー
+ * 
+ **************************************************/
+marquee, .marquee	{color:#900; background-color:#EEE; border-width:0 0;}
+
+
+
+
+
